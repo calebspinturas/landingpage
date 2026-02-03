@@ -1,0 +1,238 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   CORES DO LOGO
+========================= */
+:root {
+  --blue: #1f4b99;
+  --yellow: #f2b01e;
+  --yellow-dark: #d89a14;
+  --dark: #2f2f2f;
+  --gray: #666;
+  --bg: #f9f9f9;
+  --white: #ffffff;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* =========================
+   HERO (STACK VERTICAL)
+========================= */
+header.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 1rem 4rem;
+  background-color: var(--white);
+}
+
+/* LOGO */
+header.hero .hero-bg img {
+  max-width: 1100px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2.5rem;
+}
+
+/* TEXTO + CTA */
+header.hero .hero-content {
+  max-width: 700px;
+}
+
+header.hero h2 {
+  font-size: 1.4rem;
+  color: var(--dark);
+  margin-bottom: 2rem;
+}
+
+/* BOTÃO */
+.cta-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: var(--blue);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #163b78;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   SERVIÇOS
+========================= */
+section.highlights {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.highlight {
+  max-width: 420px;
+  text-align: center;
+}
+
+.highlight img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.highlight p {
+  margin-top: 0.8rem;
+  color: var(--gray);
+}
+
+/* =========================
+   DIFERENCIAIS
+========================= */
+section.graph {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+section.graph h3 {
+  color: var(--blue);
+  font-size: 1.9rem;
+  margin-bottom: 1.5rem;
+}
+
+section.graph img {
+  max-width: 90%;
+}
+
+.btn-download {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  color: var(--blue);
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+section.contact-form {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+section.contact-form h3 {
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+section.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section.contact-form label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+section.contact-form input,
+section.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+section.contact-form button {
+  margin-top: 1.5rem;
+  padding: 1rem 2.5rem;
+  background-color: var(--yellow);
+  color: var(--dark);
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+section.contact-form button:hover {
+  background-color: var(--yellow-dark);
+}
+
+/* =========================
+   TESTEMUNHOS
+========================= */
+section.testimonials {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+section.testimonials h3 {
+  color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+section.testimonials p {
+  font-style: italic;
+  color: var(--gray);
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: var(--dark);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+footer a {
+  color: var(--yellow);
+  text-decoration: none;
+}
+
+/* =========================
+   WHATSAPP FLOAT
+========================= */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-float img {
+  width: 60px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+  header.hero h2 {
+    font-size: 1.15rem;
+  }
+
+  section.highlights {
+    flex-direction: column;
+  }
+}
