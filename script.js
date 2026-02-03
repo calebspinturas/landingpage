@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Botão Flutuante do WhatsApp
   document.addEventListener("DOMContentLoaded", function () {
     const whatsappButton = document.createElement("a");
-    whatsappButton.href = "https://wa.me/5511986723965";
+    whatsappButton.href = "https://wa.me/5511975506928";
     whatsappButton.className = "whatsapp-float";
     whatsappButton.target = "_blank";
     whatsappButton.innerHTML = `<img src="images/whatsapp-icon.png" alt="WhatsApp">`;
@@ -100,4 +100,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 1000);
     }
   });
+
   
